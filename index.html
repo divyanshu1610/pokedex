@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="ui fluid container">
+    <div class="ui two row">
+
+      <!-- take pokemon number as input -->
+      <div class="ui three column centered grid">
+        <div class="ui row centered"> </div>
+        <div class="ui row centered">
+          <div class="ui action input">
+            <input id="inputPokemonId" type="text" placeholder="Enter Pokemon ID...">
+            <button class="ui icon button">
+              <i class="search icon"></i>
+            </button>
+          </div>
+
+        </div>
+        <div class="ui row centered">
+          <h4 class="ui header">Enter number between 1 and 898</h4>
+        </div>
+      </div>
+
+      <!-- display pokemon image and name -->
+      <div class="ui three column centered grid">
+        <div class="ui row centered"> </div>
+        <div class="ui row centered">
+          <div id="placeholder" class="ui placeholder">
+            <div class="square image">
+              <img id="pokemonImage" class="ui medium rounded image" src="" alt="Pokemon image">
+            </div>
+          </div>
+        </div>
+        <div class="ui row centered">
+          <h2 id="pokemonName" class="ui header"></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
