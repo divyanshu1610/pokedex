@@ -7,10 +7,10 @@ const PokemonAPI = (function pokemonHandler() {
   let timeout = null;
   async function fetchDetails(val) {
     clearTimeout(timeout);
-    timeout && console.log(`Timeout Cleared: ${timeout}`);
+//     timeout && console.log(`Timeout Cleared: ${timeout}`);
     timeout = setTimeout(async () => {
       timeout = null;
-      console.log(`ID: ${val} Fetching started`);
+//       console.log(`ID: ${val} Fetching started`);
       reset();
       if (val === 0 || val > 1118) return;
       const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${val}`);
@@ -23,7 +23,7 @@ const PokemonAPI = (function pokemonHandler() {
       nameEle.innerText = name;
       document.getElementById('placeholder').classList.remove('placeholder');
     }, 800);
-    console.log(`Timeout Created: ${timeout}`);
+//     console.log(`Timeout Created: ${timeout}`);
   }
   return { fetchDetails };
 })();
